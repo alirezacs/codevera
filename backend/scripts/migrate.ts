@@ -1,7 +1,8 @@
 import "dotenv/config";
 import { readdirSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { createPool } from "../src/database/database.js";
+import { pathToFileURL } from "node:url";
+import { createPool } from "../src/database/database.ts";
 export async function migrate(url = process.env.DATABASE_URL) {
   const pool = createPool(url);
   const client = await pool.connect();
@@ -40,7 +41,11 @@ export async function migrate(url = process.env.DATABASE_URL) {
     await pool.end();
   }
 }
-if (require.main === module)
+const isMainModule =
+  process.argv[1] !== undefined &&
+  import.meta.url === pathToFileURL(resolve(process.argv[1])).href;
+
+if (isMainModule)
   migrate().catch(() => {
     console.error(
       "Migration failed. Check database connectivity and migration SQL.",
