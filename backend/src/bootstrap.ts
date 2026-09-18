@@ -4,7 +4,7 @@ import { NestFactory } from "@nestjs/core";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { json } from "express";
-import helmet from "helmet";
+import * as helmetModule from "helmet";
 import { AppModule } from "./app.module.js";
 import { Errors } from "./common/errors.js";
 import { z } from "zod";
@@ -15,7 +15,7 @@ export function configureApp(app: NestExpressApplication) {
     PORT: z.coerce.number().int().min(1).max(65535).default(4000),
     SESSION_HOURS: z.coerce.number().min(1).max(24).default(8),
   }).parse(process.env);
-  app.use(helmet());
+  app.use(helmetModule.default());
   app.useStaticAssets(join(process.cwd(), "uploads"), { prefix: "/uploads" });
   app.use(json({ limit: "64kb" }));
   app.setGlobalPrefix("api/v1");
