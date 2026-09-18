@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier --write src scripts test",
-    "db:migrate": "ts-node --esm -P tsconfig.scripts.json scripts/migrate.ts",
+    "db:migrate": "TS_NODE_PROJECT=tsconfig.scripts.json node --loader ts-node/esm scripts/migrate.ts",
     "db:seed": "ts-node --esm scripts/seed.ts",
     "admin:create": "ts-node --esm scripts/create-admin.ts",
     "test": "ts-node --esm test/integration.ts",

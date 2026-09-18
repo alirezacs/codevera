@@ -25,3 +25,5 @@
 
 # Uploads / generated files
 **/uploads/
+.vercel
+.env*
