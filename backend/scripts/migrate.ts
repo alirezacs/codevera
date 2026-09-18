@@ -46,9 +46,8 @@ const isMainModule =
   import.meta.url === pathToFileURL(resolve(process.argv[1])).href;
 
 if (isMainModule)
-  migrate().catch(() => {
-    console.error(
-      "Migration failed. Check database connectivity and migration SQL.",
-    );
+  migrate().catch((error: unknown) => {
+    console.error("Migration failed. Check database connectivity and migration SQL.");
+    console.error(error);
     process.exitCode = 1;
   });
