@@ -9,16 +9,12 @@ import { AppModule } from "./app.module";
 import { Errors } from "./common/errors";
 import { z } from "zod";
 import { join } from "node:path";
-export async function createApp() {
+export function configureApp(app: NestExpressApplication) {
   z.object({
     DATABASE_URL: z.string().url(),
     PORT: z.coerce.number().int().min(1).max(65535).default(4000),
     SESSION_HOURS: z.coerce.number().min(1).max(24).default(8),
   }).parse(process.env);
-  const app = await NestFactory.create<NestExpressApplication>(AppModule, {
-    bodyParser: false,
-    logger: process.env.NODE_ENV === "test" ? false : undefined,
-  });
   app.use(helmet());
   app.useStaticAssets(join(process.cwd(), "uploads"), { prefix: "/uploads" });
   app.use(json({ limit: "64kb" }));
@@ -47,5 +43,13 @@ export async function createApp() {
       describeApi(SwaggerModule.createDocument(app, config)),
     );
   }
+}
+
+export async function createApp() {
+  const app = await NestFactory.create<NestExpressApplication>(AppModule, {
+    bodyParser: false,
+    logger: process.env.NODE_ENV === "test" ? false : undefined,
+  });
+  configureApp(app);
   return app;
 }
