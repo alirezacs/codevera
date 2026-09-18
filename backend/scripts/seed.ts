@@ -1,5 +1,7 @@
 import "dotenv/config";
 import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 import { createPool } from "../src/database/database.js";
 import {
   contentSchemas,
@@ -53,7 +55,11 @@ export async function seed(url = process.env.DATABASE_URL) {
     await pool.end();
   }
 }
-if (require.main === module)
+const isMainModule =
+  process.argv[1] !== undefined &&
+  import.meta.url === pathToFileURL(resolve(process.argv[1])).href;
+
+if (isMainModule)
   seed().catch(() => {
     console.error("Seed failed. Run migrations and check seed/content.json.");
     process.exitCode = 1;

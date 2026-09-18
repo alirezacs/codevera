@@ -45,9 +45,10 @@ async function main() {
     await pool.end();
   }
 }
-main().catch(() => {
+main().catch((error: unknown) => {
   console.error(
     "Owner creation failed. Provide a valid ADMIN_EMAIL, ADMIN_NAME and ADMIN_PASSWORD (12+ characters). This command only works before the first user exists.",
   );
+  console.error(error);
   process.exitCode = 1;
 });

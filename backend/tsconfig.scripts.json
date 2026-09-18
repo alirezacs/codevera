@@ -4,5 +4,13 @@
     "allowImportingTsExtensions": true,
     "noEmit": true
   },
-  "include": ["scripts/migrate.ts", "src/database/database.ts"]
+  "ts-node": {
+    "experimentalResolver": true
+  },
+  "include": [
+    "scripts/migrate.ts",
+    "scripts/seed.ts",
+    "scripts/create-admin.ts",
+    "src/**/*.ts"
+  ]
 }
