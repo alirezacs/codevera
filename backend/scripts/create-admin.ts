@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { z } from "zod";
-import { createPool } from "../src/database/database";
-import { hashPassword } from "../src/auth/password";
+import { createPool } from "../src/database/database.js";
+import { hashPassword } from "../src/auth/password.js";
 async function main() {
   const input = z
     .object({

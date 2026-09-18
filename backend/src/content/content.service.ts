@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
-import { Database } from "../database/database";
-import { contentSchemas, ContentKind } from "./schemas";
-import { Pagination } from "../common/validation";
+import { Database } from "../database/database.js";
+import { contentSchemas, ContentKind } from "./schemas.js";
+import { Pagination } from "../common/validation.js";
 export type ContentRow = {
   id: string;
   slug: string;

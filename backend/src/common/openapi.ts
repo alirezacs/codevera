@@ -3,21 +3,21 @@ import type {
   OpenAPIObject,
   SchemaObject,
   OperationObject,
-} from "@nestjs/swagger/dist/interfaces/open-api-spec.interface";
+} from "@nestjs/swagger";
 import {
   projectSchema,
   toolSchema,
   founderSchema,
   companySchema,
-} from "../content/schemas";
+} from "../content/schemas.js";
 import {
   bookingSchema,
   settingsSchema,
   messageSchema,
   statusSchema,
-} from "../bookings/schemas";
-import { loginSchema, passwordSchema } from "../auth/auth.controller";
-import { createSchema, updateSchema } from "../auth/users.controller";
+} from "../bookings/schemas.js";
+import { loginSchema, passwordSchema } from "../auth/auth.controller.js";
+import { createSchema, updateSchema } from "../auth/users.controller.js";
 export function describeApi(document: OpenAPIObject) {
   const schemas = {
     ProjectInput: projectSchema,

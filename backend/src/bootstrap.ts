@@ -1,12 +1,12 @@
-import { describeApi } from "./common/openapi";
+import { describeApi } from "./common/openapi.js";
 import "reflect-metadata";
 import { NestFactory } from "@nestjs/core";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { json } from "express";
 import helmet from "helmet";
-import { AppModule } from "./app.module";
-import { Errors } from "./common/errors";
+import { AppModule } from "./app.module.js";
+import { Errors } from "./common/errors.js";
 import { z } from "zod";
 import { join } from "node:path";
 export function configureApp(app: NestExpressApplication) {

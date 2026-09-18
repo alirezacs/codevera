@@ -1,7 +1,7 @@
 import "dotenv/config";
-import { createPool } from "../src/database/database";
-import { migrate } from "../scripts/migrate";
-import { seed } from "../scripts/seed";
+import { createPool } from "../src/database/database.js";
+import { migrate } from "../scripts/migrate.js";
+import { seed } from "../scripts/seed.js";
 export async function resetTestDatabase(url = process.env.TEST_DATABASE_URL) {
   if (
     !url ||

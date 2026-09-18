@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { nameSchema, phoneSchema, localeSchema } from "../common/validation";
+import { nameSchema, phoneSchema, localeSchema } from "../common/validation.js";
 const date = z
   .string()
   .regex(/^\d{4}-\d{2}-\d{2}$/)

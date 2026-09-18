@@ -13,15 +13,15 @@ import {
 } from "@nestjs/common";
 import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
 import { z } from "zod";
-import { Database } from "../database/database";
+import { Database } from "../database/database.js";
 import {
   Validate,
   nameSchema,
   pagination,
   Pagination,
-} from "../common/validation";
-import { AdminRequest, Owner } from "./guard";
-import { hashPassword } from "./password";
+} from "../common/validation.js";
+import { AdminRequest, Owner } from "./guard.js";
+import { hashPassword } from "./password.js";
 export const createSchema = z
   .object({
     email: z.email().trim().toLowerCase().max(254),

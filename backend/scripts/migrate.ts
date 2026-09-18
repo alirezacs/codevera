@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { readdirSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { createPool } from "../src/database/database";
+import { createPool } from "../src/database/database.js";
 export async function migrate(url = process.env.DATABASE_URL) {
   const pool = createPool(url);
   const client = await pool.connect();

@@ -19,15 +19,15 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
 import { z } from "zod";
-import { Public, AdminRequest } from "../auth/guard";
+import { Public, AdminRequest } from "../auth/guard.js";
 import {
   Validate,
   pagination,
   Pagination,
   localeSchema,
-} from "../common/validation";
-import { companySchema, Company, ContentKind, kindSchema } from "./schemas";
-import { ContentService } from "./content.service";
+} from "../common/validation.js";
+import { companySchema, Company, ContentKind, kindSchema } from "./schemas.js";
+import { ContentService } from "./content.service.js";
 const publicQuery = pagination.extend({ locale: localeSchema });
 @ApiTags("Public content")
 @Controller()

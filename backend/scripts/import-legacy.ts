@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { readFileSync } from "node:fs";
-import { createPool } from "../src/database/database";
+import { createPool } from "../src/database/database.js";
 import { z } from "zod";
 const schema = z.object({
   bookings: z.array(

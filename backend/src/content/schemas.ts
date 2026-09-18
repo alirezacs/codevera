@@ -4,7 +4,7 @@ import {
   localizedText,
   shortText,
   phoneSchema,
-} from "../common/validation";
+} from "../common/validation.js";
 const projectText = z
   .object({
     title: shortText,

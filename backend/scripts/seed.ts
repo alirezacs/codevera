@@ -1,12 +1,12 @@
 import "dotenv/config";
 import { readFileSync } from "node:fs";
-import { createPool } from "../src/database/database";
+import { createPool } from "../src/database/database.js";
 import {
   contentSchemas,
   ContentKind,
   companySchema,
-} from "../src/content/schemas";
-import { settingsSchema } from "../src/bookings/schemas";
+} from "../src/content/schemas.js";
+import { settingsSchema } from "../src/bookings/schemas.js";
 export async function seed(url = process.env.DATABASE_URL) {
   const data = JSON.parse(readFileSync("seed/content.json", "utf8")) as Record<
     string,

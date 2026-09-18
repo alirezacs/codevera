@@ -1,0 +1,1 @@
+/opt/homebrew/Cellar/postgresql@16/16.14/bin/postgres "-D" "/Users/alireza/Desktop/codevera/backend/.local/pg" "-p" "55432" "-h" "127.0.0.1"

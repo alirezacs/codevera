@@ -2,12 +2,12 @@ import "dotenv/config";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { randomBytes } from "node:crypto";
-import { createApp } from "../src/bootstrap";
-import { createPool } from "../src/database/database";
-import { hashPassword } from "../src/auth/password";
-import { resetTestDatabase } from "./database";
-import { scheduledSlots } from "../src/bookings/bookings.service";
-import { Settings } from "../src/bookings/schemas";
+import { createApp } from "../src/bootstrap.js";
+import { createPool } from "../src/database/database.js";
+import { hashPassword } from "../src/auth/password.js";
+import { resetTestDatabase } from "./database.js";
+import { scheduledSlots } from "../src/bookings/bookings.service.js";
+import { Settings } from "../src/bookings/schemas.js";
 async function main() {
   const url = await resetTestDatabase();
   process.env.DATABASE_URL = url;

@@ -2,7 +2,7 @@ import "dotenv/config";
 import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { spawnSync } from "node:child_process";
-import { createPool } from "../src/database/database";
+import { createPool } from "../src/database/database.js";
 
 async function main() {
   const url = new URL(process.env.DATABASE_URL || "");

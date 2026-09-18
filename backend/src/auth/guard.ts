@@ -9,7 +9,7 @@ import {
 import { Reflector } from "@nestjs/core";
 import { createHash } from "node:crypto";
 import type { Request } from "express";
-import { Database } from "../database/database";
+import { Database } from "../database/database.js";
 export const Public = () => SetMetadata("public", true);
 export const Owner = () => SetMetadata("owner", true);
 export type AdminUser = {

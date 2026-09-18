@@ -4,8 +4,8 @@ import {
   NotFoundException,
 } from "@nestjs/common";
 import type { PoolClient } from "pg";
-import { Database } from "../database/database";
-import { Settings, bookingSchema } from "./schemas";
+import { Database } from "../database/database.js";
+import { Settings, bookingSchema } from "./schemas.js";
 import { z } from "zod";
 export function scheduledSlots(
   settings: Settings,

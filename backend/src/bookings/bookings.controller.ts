@@ -15,17 +15,17 @@ import {
 import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
 import { Throttle } from "@nestjs/throttler";
 import { z } from "zod";
-import { Public, AdminRequest } from "../auth/guard";
-import { Database } from "../database/database";
-import { Validate, pagination, Pagination } from "../common/validation";
-import { BookingsService } from "./bookings.service";
+import { Public, AdminRequest } from "../auth/guard.js";
+import { Database } from "../database/database.js";
+import { Validate, pagination, Pagination } from "../common/validation.js";
+import { BookingsService } from "./bookings.service.js";
 import {
   bookingSchema,
   settingsSchema,
   Settings,
   statusSchema,
   messageSchema,
-} from "./schemas";
+} from "./schemas.js";
 @ApiTags("Consultations and enquiries")
 @Controller()
 export class BookingController {

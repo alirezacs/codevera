@@ -1,8 +1,8 @@
 import "dotenv/config";
-import { resetTestDatabase } from "./database";
-import { createPool } from "../src/database/database";
-import { hashPassword } from "../src/auth/password";
-import { createApp } from "../src/bootstrap";
+import { resetTestDatabase } from "./database.js";
+import { createPool } from "../src/database/database.js";
+import { hashPassword } from "../src/auth/password.js";
+import { createApp } from "../src/bootstrap.js";
 void (async () => {
   if (!process.env.BROWSER_TEST_DATABASE_URL)
     throw new Error("BROWSER_TEST_DATABASE_URL is required.");

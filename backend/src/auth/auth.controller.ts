@@ -11,10 +11,10 @@ import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
 import { Throttle } from "@nestjs/throttler";
 import { randomBytes } from "node:crypto";
 import { z } from "zod";
-import { Database } from "../database/database";
-import { Validate } from "../common/validation";
-import { Public, tokenHash, AdminRequest, AdminUser } from "./guard";
-import { hashPassword, verifyPassword } from "./password";
+import { Database } from "../database/database.js";
+import { Validate } from "../common/validation.js";
+import { Public, tokenHash, AdminRequest, AdminUser } from "./guard.js";
+import { hashPassword, verifyPassword } from "./password.js";
 export const loginSchema = z
   .object({
     email: z.email().trim().toLowerCase().max(254),
