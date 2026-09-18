@@ -1,0 +1,48 @@
+{
+  "name": "codevera-nest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Codevera NestJS and PostgreSQL API",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/main.js",
+    "start:dev": "node --watch -r ts-node/register src/main.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write src scripts test",
+    "db:migrate": "ts-node scripts/migrate.ts",
+    "db:seed": "ts-node scripts/seed.ts",
+    "admin:create": "ts-node scripts/create-admin.ts",
+    "test": "ts-node test/integration.ts",
+    "test:serve": "ts-node test/serve.ts",
+    "db:import-legacy": "ts-node scripts/import-legacy.ts",
+    "db:start": "ts-node scripts/start-local-db.ts",
+    "prestart:dev": "npm run db:start"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@nestjs/common": "^12.0.3",
+    "@nestjs/core": "^12.0.3",
+    "@nestjs/platform-express": "^12.0.3",
+    "@nestjs/swagger": "^12.0.1",
+    "@nestjs/throttler": "^6.7.0",
+    "dotenv": "^17.4.2",
+    "helmet": "^8.3.0",
+    "pg": "^8.23.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.3",
+    "@types/pg": "^8.23.1",
+    "eslint": "^10.10.0",
+    "prettier": "^3.9.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.70.0"
+  }
+}

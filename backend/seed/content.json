@@ -1,0 +1,222 @@
+{
+  "projects": [
+    {
+      "slug": "forma",
+      "published": true,
+      "featured": true,
+      "sortOrder": 0,
+      "featuredImage": "/projects/forma.svg",
+      "year": "2026",
+      "demo": true,
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "translations": {
+        "en": {
+          "title": "Forma Studio",
+          "shortDescription": "An architectural practice, expressed with clarity.",
+          "description": "An editorial website concept for an independent architecture studio. Generous image spaces and a quiet typographic system let the work lead the conversation.",
+          "category": "Architecture & interiors",
+          "services": [
+            "Art direction",
+            "Website design",
+            "Frontend development"
+          ],
+          "challenge": "Give an image-led practice a distinctive presence without letting the interface compete with its work.",
+          "solution": "A structured project archive, restrained navigation, and an adaptable editorial grid bring clarity to a rich collection of work.",
+          "outcome": "A responsive concept with a coherent visual language and room for a growing project archive. This is a demonstration, not a delivered client engagement."
+        },
+        "fa": {
+          "title": "استودیو فورما",
+          "shortDescription": "بیانی روشن برای یک استودیوی معماری.",
+          "description": "طرح مفهومی وب‌سایتی با ساختار مجله‌ای برای یک استودیوی مستقل معماری. فضای کافی برای تصاویر و تایپوگرافی آرام، اجازه می‌دهد خود آثار در مرکز توجه باشند.",
+          "category": "معماری و طراحی داخلی",
+          "services": [
+            "هدایت هنری",
+            "طراحی وب‌سایت",
+            "توسعه فرانت‌اند"
+          ],
+          "challenge": "ساخت حضوری متمایز برای یک استودیوی تصویرمحور، بدون آنکه رابط کاربری با آثار معماری رقابت کند.",
+          "solution": "آرشیو ساختاریافته پروژه‌ها، مسیریابی ساده و چیدمان انعطاف‌پذیر، مجموعه‌ای متنوع از آثار را به شکلی روشن ارائه می‌کنند.",
+          "outcome": "طرحی واکنش‌گرا با زبان بصری منسجم و امکان گسترش آرشیو پروژه‌ها. این کار یک نمونه نمایشی است و سفارش واقعی مشتری نیست."
+        }
+      }
+    },
+    {
+      "slug": "aurelia",
+      "published": true,
+      "featured": true,
+      "sortOrder": 1,
+      "featuredImage": "/projects/aurelia.svg",
+      "year": "2026",
+      "demo": true,
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Next.js"
+      ],
+      "translations": {
+        "en": {
+          "title": "Aurelia Objects",
+          "shortDescription": "A considered digital home for everyday objects.",
+          "description": "A commerce design concept that treats each object as part of a larger story. Warm materials and clear product information make browsing feel both useful and unhurried.",
+          "category": "Commerce & lifestyle",
+          "services": [
+            "UX strategy",
+            "E-commerce design",
+            "Frontend development"
+          ],
+          "challenge": "Balance an expressive brand story with the practical information people need to shop confidently.",
+          "solution": "Clear collection navigation, generous product compositions, and concise material and care information create a consistent shopping journey.",
+          "outcome": "A visual commerce concept demonstrating product storytelling and responsive collection layouts. Payment and fulfillment are outside this demo."
+        },
+        "fa": {
+          "title": "اورلیا",
+          "shortDescription": "خانه‌ای دیجیتال برای اشیای روزمره.",
+          "description": "طرح مفهومی فروشگاهی که هر محصول را بخشی از یک داستان می‌بیند. رنگ‌های گرم و اطلاعات روشن، تجربه جستجو در محصولات را کاربردی و آرام می‌کنند.",
+          "category": "فروشگاه و سبک زندگی",
+          "services": [
+            "استراتژی تجربه کاربری",
+            "طراحی فروشگاه اینترنتی",
+            "توسعه فرانت‌اند"
+          ],
+          "challenge": "ایجاد تعادل میان روایت هویت برند و اطلاعات کاربردی موردنیاز برای خرید آگاهانه.",
+          "solution": "دسته‌بندی روشن، تصاویر بزرگ محصولات و توضیحات کوتاه درباره جنس و نگهداری، مسیر خریدی منسجم می‌سازند.",
+          "outcome": "طرح مفهومی فروشگاهی برای نمایش روایت محصول و چیدمان واکنش‌گرا. پرداخت و پردازش سفارش در این نمونه پیاده‌سازی نشده‌اند."
+        }
+      }
+    },
+    {
+      "slug": "meridian",
+      "published": true,
+      "featured": true,
+      "sortOrder": 2,
+      "featuredImage": "/projects/meridian.svg",
+      "year": "2026",
+      "demo": true,
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "SQL"
+      ],
+      "translations": {
+        "en": {
+          "title": "Meridian",
+          "shortDescription": "Complex operations. A clearer perspective.",
+          "description": "A product interface concept for teams managing projects and resources. The system brings day-to-day information together in a calm, legible workspace.",
+          "category": "Technology & platforms",
+          "services": [
+            "Product strategy",
+            "Interface design",
+            "Full-stack architecture"
+          ],
+          "challenge": "Make a dense set of operational information easy to scan without losing context or useful detail.",
+          "solution": "A focused navigation system, consistent data patterns, and deliberate visual hierarchy separate immediate actions from supporting information.",
+          "outcome": "A dashboard concept illustrating a reusable interface system. Displayed metrics are sample interface data, not business results."
+        },
+        "fa": {
+          "title": "مریدین",
+          "shortDescription": "عملیات پیچیده؛ تصویری روشن‌تر.",
+          "description": "طرح مفهومی رابط کاربری برای تیم‌های مدیریت پروژه و منابع. این سیستم اطلاعات روزمره را در محیطی آرام و خوانا کنار هم قرار می‌دهد.",
+          "category": "فناوری و پلتفرم‌ها",
+          "services": [
+            "استراتژی محصول",
+            "طراحی رابط کاربری",
+            "معماری فول‌استک"
+          ],
+          "challenge": "نمایش حجم بالای اطلاعات عملیاتی به‌صورت قابل‌مرور، بدون از دست رفتن زمینه و جزئیات مهم.",
+          "solution": "مسیریابی متمرکز، الگوهای یکپارچه نمایش داده و سلسله‌مراتب بصری دقیق، کارهای فوری را از اطلاعات تکمیلی جدا می‌کنند.",
+          "outcome": "طرح مفهومی داشبورد برای نمایش یک سیستم رابط کاربری قابل‌استفاده مجدد. اعداد نمایش‌داده‌شده داده‌های نمونه هستند و نتیجه واقعی کسب‌وکار نیستند."
+        }
+      }
+    }
+  ],
+  "company": {
+    "name": {
+      "en": "Codevera",
+      "fa": "کدورا"
+    },
+    "description": {
+      "en": "Thoughtfully designed websites. Carefully engineered for what comes next.",
+      "fa": "وب‌سایت‌هایی با طراحی فکرشده و مهندسی دقیق؛ آماده برای آینده کسب‌وکار شما."
+    },
+    "location": {
+      "en": "Working remotely, together.",
+      "fa": "از هر جا، در کنار هم."
+    },
+    "contactConfigured": false,
+    "emails": [
+      "hello@codevera.example"
+    ],
+    "phones": [],
+    "addresses": [],
+    "socialLinks": []
+  },
+  "settings": {
+    "timezone": "UTC",
+    "workingDays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "startHour": 9,
+    "endHour": 17,
+    "durationMinutes": 30,
+    "advanceDays": 28,
+    "minimumNoticeHours": 24,
+    "unavailableDates": [],
+    "blockedSlots": []
+  },
+  "tools": [
+    {
+      "slug": "nextjs",
+      "name": {
+        "en": "Next.js",
+        "fa": "Next.js"
+      },
+      "published": true,
+      "sortOrder": 0
+    },
+    {
+      "slug": "react",
+      "name": {
+        "en": "React",
+        "fa": "React"
+      },
+      "published": true,
+      "sortOrder": 1
+    },
+    {
+      "slug": "typescript",
+      "name": {
+        "en": "TypeScript",
+        "fa": "TypeScript"
+      },
+      "published": true,
+      "sortOrder": 2
+    },
+    {
+      "slug": "tailwind-css",
+      "name": {
+        "en": "Tailwind CSS",
+        "fa": "Tailwind CSS"
+      },
+      "published": true,
+      "sortOrder": 3
+    },
+    {
+      "slug": "sql",
+      "name": {
+        "en": "SQL",
+        "fa": "SQL"
+      },
+      "published": true,
+      "sortOrder": 4
+    }
+  ],
+  "founders": []
+}

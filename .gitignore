@@ -1,0 +1,27 @@
+# Dependencies
+**/node_modules/
+
+# Next.js
+**/.next/
+**/out/
+
+# Environment
+**/.env
+**/.env.local
+**/.env.*.local
+
+# NestJS
+**/dist/
+
+# Logs
+**/*.log
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Uploads / generated files
+**/uploads/

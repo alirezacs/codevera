@@ -1,0 +1,3 @@
+import { NextResponse } from "next/server";
+import { backendUrl } from "./backend";
+export async function forwardPublic(path:string,body?:unknown) {try { const response=await fetch(`${backendUrl}${path}`, {method:body===undefined?"GET":"POST",headers:body===undefined?undefined:{"Content-Type":"application/json"},body:body===undefined?undefined:JSON.stringify(body),cache:"no-store",signal:AbortSignal.timeout(10000)});const data=await response.json();return NextResponse.json(data,{status:response.status,headers:{"Cache-Control":"no-store"}});}catch{return NextResponse.json({error:"The service is temporarily unavailable. Please try again."},{status:503});}}
